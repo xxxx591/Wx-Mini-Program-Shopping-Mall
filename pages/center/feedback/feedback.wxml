@@ -1,0 +1,53 @@
+<!-- <view class="zan-pannel">
+    <view class="g-bda-userinfo">
+        <image class="userinfo-avatar" src="{{userInfo.userPic}}"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+</view> -->
+
+
+<view class="container">
+  <view class="zan-panel">
+
+   <form bindsubmit="addFeedback">
+      <view class="zan-cell zan-form__item">
+        <text class="zan-form__title">联系方式：</text>
+        <input
+          class="zan-form__input zan-cell__bd"
+          type="number"
+          name = "contact"
+          maxlength="11"
+          placeholder="请输入联系方式"
+          value = "{{contact}}"
+        />
+      </view>
+      <view class="zan-cell zan-form__item" style='align-items:flex-start'>
+        <text class="zan-form__title">建议内容：</text>
+        <textarea
+          class="zan-form__input zan-cell__bd"
+          type="textarea"
+          name = "content"
+          maxlength="200"
+          placeholder="请输入建议"
+          value = "{{content}}"
+        />
+      </view>
+      <view class="zan-btns">
+        <button class="zan-btn zan-btn--primary" formType="submit">立即提交</button>
+      </view>
+    </form>
+
+</view>
+
+
+  <view class="page__ft">
+      <view class="page__bd page__bd_spacing">
+        <view class="weui-footer ">
+          <view class="weui-footer__text">Copyright © 2013-2017 www.bmob.cn</view>
+        </view>
+      </view>
+  </view>
+
+  
+</view>
+
